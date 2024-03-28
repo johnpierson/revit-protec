@@ -49,7 +49,6 @@ namespace revitProtec.Commands
                 new List<ElementId>() { activeView.Id }, options);
 
 
-
             //import the DWG now
             using (Transaction t = new Transaction(doc, "Import the DWG"))
             {
@@ -82,7 +81,7 @@ namespace revitProtec.Commands
     {
         public void BuildContextMenu(ContextMenu menu)
         {
-            var commandMenuItem = new CommandMenuItem("Flatten Selection", typeof(FlattenSelection).FullName,
+            CommandMenuItem commandMenuItem = new CommandMenuItem("Flatten Selection", typeof(FlattenSelection).FullName,
                 typeof(ContextMenuApplication).Assembly.Location);
 
             commandMenuItem.SetAvailabilityClassName(typeof(FlattenSelection).FullName);
@@ -90,6 +89,7 @@ namespace revitProtec.Commands
             menu.AddItem(new SeparatorItem());
 
             menu.AddItem(commandMenuItem);
+
         }
     }
 }
