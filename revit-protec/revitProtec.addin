@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>revitProtec</Name>
+        <Assembly>revitProtec/revitProtec.dll</Assembly>
+        <AddInId>256FCF93-379C-4E25-9D63-761A0FEAE470</AddInId>
+        <FullClassName>revitProtec.ContextMenuApplication</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>
